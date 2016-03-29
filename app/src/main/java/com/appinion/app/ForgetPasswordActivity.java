@@ -51,11 +51,11 @@ public class ForgetPasswordActivity extends Activity implements View.OnFocusChan
         switch (v.getId()) {
             case R.id.edt_forget_email:
                 if (hasFocus == false) {
-                    View checkEmail = (View) findViewById(R.id.v_check_email);
+                    //View checkEmail = (View) findViewById(R.id.v_check_email);
                     if (edtForgotEmail.getText().toString().equals("")) {
-                        checkEmail.setBackgroundResource(R.drawable.border_with_circle);
+                       // checkEmail.setBackgroundResource(R.drawable.border_with_circle);
                     } else {
-                        checkEmail.setBackgroundResource(R.drawable.border_with_circle_green);
+                        //checkEmail.setBackgroundResource(R.drawable.border_with_circle_green);
                     }
                 }
                 break;

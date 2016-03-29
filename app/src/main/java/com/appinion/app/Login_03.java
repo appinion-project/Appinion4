@@ -153,7 +153,7 @@ public class Login_03 extends BaseActivity implements View.OnClickListener, Webs
         switch (v.getId()){
             case R.id.act_login_edt_email:
                 if(hasFocus==false){
-                    View checkEmail=(View)findViewById(R.id.v_check_email);
+                   // View checkEmail=(View)findViewById(R.id.v_check_email);
                     if(mEmailEdt.getText().toString().equals("")){
                        // checkEmail.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -167,7 +167,7 @@ public class Login_03 extends BaseActivity implements View.OnClickListener, Webs
 
             case R.id.act_login_edt_pin:
                 if(hasFocus==false){
-                    View checkPin=(View)findViewById(R.id.v_check_pin);
+                   // View checkPin=(View)findViewById(R.id.v_check_pin);
                     if(mPinEdt.getText().toString().equals("")){
                         //checkPin.setBackgroundResource(R.drawable.border_with_circle);
                     }
