@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewUserBarcode"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.26" />
 </LinearLayout>
