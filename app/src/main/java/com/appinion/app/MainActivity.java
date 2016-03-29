@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText mSearchEt;
     public Button mHomebtn,mCouponbtn,mgiftcardbtn,mpromotionbtn;
 
-    int y=1010;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
