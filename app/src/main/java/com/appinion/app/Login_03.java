@@ -155,12 +155,12 @@ public class Login_03 extends BaseActivity implements View.OnClickListener, Webs
                 if(hasFocus==false){
                     View checkEmail=(View)findViewById(R.id.v_check_email);
                     if(mEmailEdt.getText().toString().equals("")){
-                        checkEmail.setBackgroundResource(R.drawable.border_with_circle);
+                       // checkEmail.setBackgroundResource(R.drawable.border_with_circle);
                     }
 
                     else
                     {
-                        checkEmail.setBackgroundResource(R.drawable.border_with_circle_green);
+                       // checkEmail.setBackgroundResource(R.drawable.border_with_circle_green);
                     }
                 }
                 break;
@@ -169,12 +169,12 @@ public class Login_03 extends BaseActivity implements View.OnClickListener, Webs
                 if(hasFocus==false){
                     View checkPin=(View)findViewById(R.id.v_check_pin);
                     if(mPinEdt.getText().toString().equals("")){
-                        checkPin.setBackgroundResource(R.drawable.border_with_circle);
+                        //checkPin.setBackgroundResource(R.drawable.border_with_circle);
                     }
 
                     else
                     {
-                        checkPin.setBackgroundResource(R.drawable.border_with_circle_green);
+                       // checkPin.setBackgroundResource(R.drawable.border_with_circle_green);
                     }
                 }
                 break;

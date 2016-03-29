@@ -18,8 +18,48 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="30dp"
         android:weightSum="1"
-        android:background="@mipmap/bag_edit_final"
         >
+
+        <LinearLayout
+            android:layout_marginTop="630dp"
+            android:layout_width="240dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@drawable/round">
+
+            <EditText
+                android:id="@+id/act_login_edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bottom_line"
+                android:hint="@string/email"
+                android:textColorHint="#aaaaaa"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:textColor="#ffffff"
+                 />
+            <EditText
+                android:id="@+id/act_login_edt_pin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/pin"
+                android:textColorHint="#aaaaaa"
+                android:textColor="#ffffff"
+                android:background="@drawable/edit_text_bottom_line"
+              />
+            <Button
+                android:id="@+id/act_login_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="Log In"
+                android:background="@drawable/upcurve"
+                />
+
+        </LinearLayout>
 
 
 
@@ -38,27 +78,11 @@
 
 
 
-           <EditText
-                android:id="@+id/act_login_edt_email"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/edit_text_bottom_line_white"
-                android:hint="@string/email"
-                 android:textColorHint="#aaaaaa"
-                android:layout_weight="1"
-                android:layout_marginTop="0dp"
-               android:textColor="#ffffff"
-               android:backgroundTint="#ffffff" />
 
 
 
 
-            <View
-                android:id="@+id/v_check_email"
-                android:layout_marginLeft="-10dp"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/border_with_circle"/>
+
 
 
         </LinearLayout>
@@ -73,46 +97,25 @@
             android:layout_marginBottom="10dp">
 
 
-            <EditText
-                android:id="@+id/act_login_edt_pin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_bottom_line_white"
-                android:hint="@string/pin"
-                android:textColorHint="#aaaaaa"
-                android:textColor="#ffffff"
-                android:backgroundTint="#ffffff" />
-            <View
-                android:id="@+id/v_check_pin"
-                android:layout_marginLeft="-15dp"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/border_with_circle"/>
+
 
         </LinearLayout>
+
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:weightSum="1">
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="30dp"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp">
 
 
-            <Button
-                android:id="@+id/act_login_btn_login"
-
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center_vertical"
-                android:background="@mipmap/tick"
-                android:backgroundTint="#214d04" />
-
-            <!--     -->
 
         </LinearLayout>
+
     </LinearLayout>
 
 
