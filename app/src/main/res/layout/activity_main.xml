@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:background="#cccccc"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+       <!--     <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_profile"
+                android:background="@android:drawable/ic_menu_myplaces"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right">
+            </android.support.v7.widget.AppCompatSpinner>-->
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgProflieContent"
+                android:src="@mipmap/profile"
+                android:onClick="onClick"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#333333">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/acti_main_iv_home"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/home_icon"
+                    android:background="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/acti_main_btn_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="0dp"
+                    android:gravity="top|center"
+                    android:padding="0dp"
+                    android:text="@string/btnHome"
+                    android:background="#333333"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:id="@+id/line_survey"
+                    android:background="#ffffff"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/acti_main_iv_coupon"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="2"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/coupon_transparent"
+                    android:background="#777777" />
+
+                <Button
+                    android:id="@+id/acti_main_btn_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:gravity="top|center"
+                    android:text="@string/btnCoupon"
+                    android:background="#333333"
+                    android:textColor="#777777" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/line_coupon"
+                    android:layout_height="4dp"
+                    android:background="#333333" />
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/acti_main_iv_promotion"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/loyalty_final"
+                    android:scaleType="fitXY"
+                    android:background="#777777"
+                    android:adjustViewBounds="false" />
+
+                <Button
+                    android:id="@+id/acti_main_btn_promotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:gravity="top|center"
+                    android:text="@string/btnLoyalty"
+                    android:background="#333333"
+                    android:textColor="#777777" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:id="@+id/line_loyalty"
+                    android:background="#333333"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/acti_main_iv_giftcards"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/gift"
+                    android:background="#777777" />
+
+                <Button
+                    android:id="@+id/acti_main_btn_giftcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:gravity="top|center"
+                    android:text="@string/btnGiftCard"
+                    android:background="#333333"
+                    android:textColor="#777777" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:id="@+id/line_giftCard"
+                   android:background="#333333"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+<!--
+            <ImageView
+                android:id="@+id/acti_main_iv_home"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@mipmap/home" />
+
+            <ImageView
+                android:id="@+id/acti_main_iv_coupon"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@mipmap/couponicon" />
+
+            <ImageView
+                android:id="@+id/acti_main_iv_promotion"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@mipmap/promotion" />
+
+            <ImageView
+                android:id="@+id/acti_main_iv_giftcards"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@mipmap/giftcard"/>-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:id="@+id/layout_searchcoupon"
+            android:layout_gravity="right"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_withborder"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="#aaaaaa">
+
+                <EditText
+                    android:id="@+id/editText_search"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:hint="@string/search"
+
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#ffffff"
+                    android:focusable="false" />
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/facebook"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/twitter"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/gplus"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

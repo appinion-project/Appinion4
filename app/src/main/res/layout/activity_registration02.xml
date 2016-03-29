@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:background="#ffffff">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_margin="15dp"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:text="Sign Up"
+               android:id="@+id/textView10" />
+       </LinearLayout>
+
+
+       <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
+
+
+           <EditText
+               android:id="@+id/reg_edt_fname"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/fname"
+               android:inputType="textPersonName"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+           <View
+               android:layout_marginLeft="-10dp"
+               android:id="@+id/checkFname"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_margin="5dp">
+
+
+
+           <EditText
+               android:id="@+id/reg_edt_lname"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/lname"
+               android:inputType="textPersonName"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkLname"
+               android:layout_marginLeft="-10dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="5dp"
+           android:layout_height="40dp">
+
+
+           <EditText
+               android:id="@+id/reg_edt_email"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/email"
+               android:inputType="textEmailAddress"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkEmail"
+               android:layout_marginLeft="-5dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="5dp"
+           android:layout_height="40dp"
+          >
+
+
+
+           <EditText
+               android:id="@+id/reg_edt_pin"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/pin"
+               android:inputType="numberPassword"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkPin"
+               android:layout_marginLeft="-5dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="5dp"
+           android:layout_height="40dp">
+
+
+
+           <EditText
+               android:id="@+id/reg_edt_phone"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/phone"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkPhone"
+               android:layout_marginLeft="-5dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="5dp"
+           android:layout_height="40dp"
+          >
+
+
+           <EditText
+               android:id="@+id/reg_edt_location"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/location"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkLocation"
+               android:layout_marginLeft="-5dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="5dp"
+           android:layout_height="40dp">
+
+
+
+           <EditText
+               android:id="@+id/reg_edt_age"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:hint="@string/age"
+               android:background="@drawable/edit_text_bottom_line"
+               android:layout_weight="1" />
+
+
+           <View
+               android:id="@+id/checkAge"
+               android:layout_marginLeft="-5dp"
+               android:layout_width="30dp"
+               android:layout_height="32dp"
+               android:background="@drawable/border_with_circle"/>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_margin="10dp"
+           android:layout_height="50dp"
+           android:background="#ffffff">
+
+           <Button
+               android:id="@+id/reg_btn_submit"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:layout_weight="1"
+               android:layout_margin="5dp"
+               android:background="@drawable/round_button"
+               android:text="@string/submit" />
+           <Button
+               android:id="@+id/reg_btn_cancel"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:layout_weight="1"
+               android:layout_margin="5dp"
+               android:background="@drawable/round_button"
+               android:text="@string/cancel" />
+
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

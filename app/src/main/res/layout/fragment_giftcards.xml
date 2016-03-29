@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back_gift_box">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_gift_use"
+            style="@style/AppTheme"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="USE"
+            android:onClick="onClick"
+            app:rd_enable="true"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_gift_notify"
+            style="@style/AppTheme"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:onClick="onClick"
+            android:text="NOTIFY"
+            app:rd_enable="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_gift_buy"
+            style="@style/AppTheme"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:onClick="onClick"
+            android:text="BUY"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_gift_send"
+            style="@style/AppTheme"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:onClick="onClick"
+            android:text="SEND"
+            app:rd_enable="true"/>
+      <!--  <at.markushi.ui.CircleButton
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:src="@mipmap/tick_back"
+            android:onClick="onClick"
+            app:cb_color="#99CC00"
+            app:cb_pressedRingWidth="8dip" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

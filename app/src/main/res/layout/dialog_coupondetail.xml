@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_coupon_lin_toptitleheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark">
+
+        <Button
+            android:id="@+id/dialog_coupon_btn_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="x" />
+
+        <TextView
+            android:padding="@dimen/fab_margin"
+            android:id="@+id/dialog_coupon_iv_coupontitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Coupon Title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_coupon_iv_coupondetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:paddingBottom="@dimen/fab_margin"
+            android:layout_below="@+id/dialog_coupon_iv_coupontitle"
+            android:text="NOW THRU THURSDAY, JANUARY 31"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_medium" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:id="@+id/dialog_coupon_iv_couponimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/dialog_coupon_iv_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/dialog_coupon_iv_barcodenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="31984718477240174194"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/dialog_coupon_btn_use"
+            android:layout_width="wrap_content"
+            android:text="@string/use"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/dialog_coupon_btn_save"
+            android:layout_width="wrap_content"
+            android:text="@string/save"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/dialog_coupon_btn_send"
+            android:layout_width="wrap_content"
+            android:text="@string/send"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

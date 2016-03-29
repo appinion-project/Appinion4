@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:width="10dp"
+                android:height="10dp" />
+            <stroke
+                android:width="3dp"
+                android:color="#ffffff"
+                >
+            </stroke>
+        </shape>
+      />
+
+    </item>
+    <item>
+        <bitmap android:src="@mipmap/privacy_back_before"/>
+    </item>
+
+
+    
+</layer-list>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="0dp"/>
+
+    <GridView
+        android:id="@+id/frag_coupons_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollY="@dimen/item_touch_helper_max_drag_scroll_per_frame"
+        android:numColumns="1"
+        android:layout_weight="1">
+    </GridView>
+
+</LinearLayout>

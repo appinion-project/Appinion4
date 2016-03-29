@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:width="10dp"
+                android:height="10dp" />
+            <solid android:color="#ffffff"/>
+            <stroke
+                android:width="3dp"
+                android:color="#ffffff"
+                >
+            </stroke>
+        </shape>
+      />
+    </item>
+    <item>
+        <bitmap android:src="@mipmap/update_back_click"/>
+    </item>
+
+
+    
+</layer-list>

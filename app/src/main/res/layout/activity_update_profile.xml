@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_FirstName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="69dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_LastName"
+            android:layout_below="@+id/editText_FirstName"
+            android:layout_alignRight="@+id/editText_FirstName"
+            android:layout_alignEnd="@+id/editText_FirstName"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPhone"
+            android:layout_below="@+id/editText_LastName"
+            android:layout_alignRight="@+id/editText_LastName"
+            android:layout_alignEnd="@+id/editText_LastName"
+            android:layout_alignLeft="@+id/editText_LastName"
+            android:layout_alignStart="@+id/editText_LastName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLocation"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lname"
+            android:id="@+id/textView"
+            android:layout_above="@+id/editText_LastName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/phone"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/editTextLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnUpdate"
+            android:id="@+id/button_Updates"
+            android:layout_below="@+id/editTextLocation"
+            android:onClick="onClick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/location"
+            android:id="@+id/textView6"
+            android:layout_alignBottom="@+id/editTextLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/updateProfile"
+            android:id="@+id/textView8"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lname"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/editTextPhone"
+            android:layout_toLeftOf="@+id/editText_LastName"
+            android:layout_toStartOf="@+id/editText_LastName" />
+
+    </RelativeLayout>
+</LinearLayout>
