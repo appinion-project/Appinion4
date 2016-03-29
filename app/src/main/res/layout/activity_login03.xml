@@ -18,7 +18,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="-5dp"
         android:weightSum="1"
-        android:background="@mipmap/log_in_backgound"
+        android:background="@mipmap/bag_final_sym"
         >
 
         <LinearLayout
@@ -26,8 +26,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
-            android:layout_width="180dp"
-            android:layout_height="100dp"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
             android:orientation="vertical"
             android:background="@drawable/round">
 
@@ -69,7 +69,7 @@
             android:layout_marginTop="8dp"
             android:orientation="vertical"
             android:layout_width="180dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             >
             <Button
                 android:id="@+id/act_login_btn_register"
@@ -95,13 +95,6 @@
 
 
         </LinearLayout>
-
-
     </LinearLayout>
-
-
-
-
-
 </LinearLayout>
 
