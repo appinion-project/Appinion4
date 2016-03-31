@@ -18,7 +18,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="-5dp"
         android:weightSum="1"
-        android:background="@drawable/bag_edit_final"
+        android:background="@drawable/bag_login_final"
         >
 
         <LinearLayout

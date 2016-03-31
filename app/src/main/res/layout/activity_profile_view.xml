@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginLeft="20dp"
+    android:background="@mipmap/backgroudn_profile"
+    android:layout_marginLeft="0dp"
     >
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp">
+        android:layout_marginLeft="0dp">
 
         <ImageView
             android:id="@+id/mainPageIV"
@@ -26,7 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@mipmap/backgroudn_profile"
         android:layout_marginRight="20dp"
         android:weightSum="10"
         android:layout_marginBottom="30dp"
