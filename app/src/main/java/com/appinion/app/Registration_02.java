@@ -170,33 +170,33 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
         switch (v.getId()){
             case R.id.reg_edt_fname:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkFname);
+                   /* View checkView= (View) findViewById(R.id.checkFname);
                     if(mFnameEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
                 break;
 
             case R.id.reg_edt_lname:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkLname);
+                   /* View checkView= (View) findViewById(R.id.checkLname);
                     if(mLnameEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
                 break;
 
             case R.id.reg_edt_age:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkAge);
+                  /*  View checkView= (View) findViewById(R.id.checkAge);
                     if(mAgeEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -204,7 +204,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
 
 
@@ -212,7 +212,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
 
             case R.id.reg_edt_email:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkEmail);
+                   /* View checkView= (View) findViewById(R.id.checkEmail);
                     if(mEmailEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -220,7 +220,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
 
 
@@ -229,7 +229,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
 
             case R.id.reg_edt_location:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkLocation);
+                 /*  View checkView= (View) findViewById(R.id.checkLocation);
                     if(mLocationEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -237,7 +237,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
 
 
@@ -245,7 +245,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
 
             case R.id.reg_edt_pin:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkPin);
+                   /* View checkView= (View) findViewById(R.id.checkPin);
                     if(mPinEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -253,7 +253,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
 
                 }
 
@@ -261,7 +261,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                 break;
             case R.id.reg_edt_phone:
                 if(hasFocus==false){
-                    View checkView= (View) findViewById(R.id.checkPhone);
+                 /*   View checkView= (View) findViewById(R.id.checkPhone);
                     if(mPhoneEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
                     }
@@ -269,7 +269,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                     else
                     {
                         checkView.setBackgroundResource(R.drawable.border_with_circle_green);
-                    }
+                    }*/
                 }
 
 
