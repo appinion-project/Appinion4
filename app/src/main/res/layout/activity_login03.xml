@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bag_edit_fina"
 
    >
 
@@ -18,7 +19,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="-5dp"
         android:weightSum="1"
-        android:background="@drawable/bag_edit_final"
+
         >
 
         <LinearLayout
@@ -41,7 +42,7 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_marginTop="0dp"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                  />
             <EditText
                 android:id="@+id/act_login_edt_pin"
@@ -51,7 +52,7 @@
                 android:hint="@string/pin"
                 android:gravity="center"
                 android:textColorHint="#aaaaaa"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:background="@drawable/edit_text_bottom_line"
               />
             <Button
@@ -61,7 +62,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:text="Log In"
-                android:background="@drawable/upcurve"
+                android:background="@drawable/round"
                 />
 
         </LinearLayout>
@@ -69,7 +70,7 @@
             android:layout_marginTop="8dp"
             android:orientation="vertical"
             android:layout_width="180dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             >
             <Button
                 android:id="@+id/act_login_btn_register"
@@ -78,8 +79,8 @@
                 android:text="@string/register"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:background="#000000"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:background="#00ffffff" />
 
 
             <Button
@@ -90,7 +91,7 @@
                 android:layout_weight="1"
                 android:layout_marginRight="5dp"
                 android:onClick="onClick"
-                android:background="#000000"
+                android:background="#00000000"
                 android:textColor="#ffffff" />
 
 

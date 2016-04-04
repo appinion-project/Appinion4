@@ -43,7 +43,7 @@
         <activity
             android:name=".ProfileActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.trans"
+            android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity
