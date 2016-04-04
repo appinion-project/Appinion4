@@ -4,41 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bag_edit_fina"
-
-   >
+    android:background="@mipmap/backgroundhatirjheel">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="25dp"
+
         android:layout_marginTop="0dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="-5dp"
-        android:weightSum="1"
-
-        >
+        android:weightSum="1">
 
         <LinearLayout
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
-            android:layout_width="190dp"
-            android:layout_height="90dp"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
             android:orientation="vertical"
-            android:background="@drawable/round">
+           >
 
             <EditText
                 android:id="@+id/act_login_edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/edit_text_bottom_line"
+                android:background="@drawable/upcurve"
                 android:hint="@string/email"
-                android:textColorHint="#aaaaaa"
+                android:textColorHint="#111111"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_marginTop="0dp"
@@ -51,18 +47,22 @@
                 android:layout_weight="1"
                 android:hint="@string/pin"
                 android:gravity="center"
-                android:textColorHint="#aaaaaa"
+                android:textColorHint="#111111"
                 android:textColor="#000000"
-                android:background="@drawable/edit_text_bottom_line"
+                android:background="@drawable/lowercurve"
               />
             <Button
                 android:id="@+id/act_login_btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:text="Log In"
-                android:background="@drawable/round"
+                android:background="@drawable/roundtransparent"
                 />
 
         </LinearLayout>

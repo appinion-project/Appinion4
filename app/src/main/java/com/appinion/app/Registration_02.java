@@ -51,7 +51,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
      * Initialise the components
      */
     private void initComponenets() {
-        check_fname=(View)findViewById(R.id.checkFname);
+       // check_fname=(View)findViewById(R.id.checkFname);
         ColorStateList csl = new ColorStateList(new int[][]{new int[0]}, new int[]{0xffffcc00});
         mFnameEdt = (EditText) findViewById(R.id.reg_edt_fname);
         mFnameEdt.setOnFocusChangeListener(this);
