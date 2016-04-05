@@ -37,13 +37,12 @@ import cz.msebera.android.httpclient.entity.StringEntity;
 public class ProfileActivity extends AppCompatActivity implements WebserviceCall.WebserviceResponse,MaterialUtils.GetBuilderClick{
     private int check;
     private TextView txtName;
-    private TextView txtEmail;
     private TextView txtAge;
-    private TextView txtPhone;
     private ImageView mMainPageIv;
     private ScrollView scrollView;
-    private LinearLayout updateLayout,privacyLayout,historyLayout;
-    private View updateView,privacyView,historyView;
+    private LinearLayout updateLayout,privacyLayout,historyLayout,profileLayout;
+    private View updateView,privacyView,historyView,profileView;
+    private TextView txtFirstName,txtEmail,txtPhone,txtLocation;
 
 
 
@@ -80,10 +79,13 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
 
     protected void initialize(){
         //tamim
+
         updateLayout=(LinearLayout) findViewById(R.id.update_lay);
         scrollView=(ScrollView) findViewById(R.id.scrollView);
+
         updateView= LayoutInflater.from(ProfileActivity.this).inflate(R.layout.update_layout,null);
         privacyView=LayoutInflater.from(ProfileActivity.this).inflate(R.layout.privacy_layout,null);
+        profileView=LayoutInflater.from(ProfileActivity.this).inflate(R.layout.profile_layout,null);
 
         //tamim
         response=new JSONObject();
@@ -101,6 +103,12 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
         newPass= (EditText) privacyView.findViewById(R.id.editText_newPassword);
         confirmPass=(EditText) privacyView.findViewById(R.id.editText_confirm);
         submitButton=(Button) privacyView.findViewById(R.id.button_changePassword);
+
+        txtName=(TextView)profileView.findViewById(R.id.txt_FirstNames);
+        txtEmail=(TextView)profileView.findViewById(R.id.txt_Email);
+        txtPhone=(TextView)profileView.findViewById(R.id.txtPhone);
+        txtLocation=(TextView)profileView.findViewById(R.id.txtLocation);
+
 
 
         webserviceCall = new WebserviceCall(ProfileActivity.this);
@@ -136,8 +144,14 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
         etLastName.setText(Pref.getValue(this, Const.PREF_LASTNAME, response.optString("lastName")));
         etPhone.setText(Pref.getValue(this,Const.PREF_PHONE,response.optString("phone")));
         etLocation.setText(Pref.getValue(this,Const.PREF_LOCATION,response.optString("location")));
+
+        txtName.setText(Pref.getValue(this, Const.PREF_FIRSTNAME, response.optString("firstName")));
+        txtEmail.setText(Pref.getValue(this, Const.PREF_EMAIL, response.optString("lastName")));
+        txtPhone.setText(Pref.getValue(this,Const.PREF_PHONE,response.optString("phone")));
+        txtLocation.setText(Pref.getValue(this,Const.PREF_LOCATION,response.optString("location")));
+
         editTextEnabler(false);
-        scrollView.addView(updateView);
+        scrollView.addView(profileView);
 
     }
 
@@ -221,6 +235,10 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
     @Override
     public void success(String url, String response) {
         //Pref.setValue();
+        Pref.setValue(this, Const.PREF_FIRSTNAME, etFirstName.getText().toString());
+        Pref.setValue(this, Const.PREF_PHONE, etPhone.getText().toString());
+        Pref.setValue(this, Const.PREF_LOCATION, etLocation.getText().toString());
+        Pref.setValue(this, Const.PREF_LASTNAME,etLastName.getText().toString());
 
 
         MaterialUtils.showLongToast(ProfileActivity.this,"Successfully Updated");
