@@ -11,7 +11,9 @@
        android:layout_width="match_parent"
        android:layout_margin="30dp"
        android:background="@drawable/sharp_withborder"
-       android:layout_height="match_parent">
+
+       android:layout_height="match_parent"
+       android:backgroundTint="#eae3e3">
 
        <LinearLayout
            android:orientation="horizontal"
@@ -222,7 +224,7 @@
            android:layout_marginLeft="10dp"
            android:layout_marginRight="10dp"
            android:layout_height="50dp"
-           android:background="#ffffff">
+           android:background="#00ffffff">
            <Button
                android:id="@+id/reg_btn_cancel"
                android:layout_width="match_parent"

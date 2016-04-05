@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#040b0101">
+    android:background="#00ffffff">
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,11 +23,11 @@
             android:orientation="horizontal"
             android:layout_margin="2dp" >
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/editText_FirstNames"
+                android:id="@+id/txt_FirstNames"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/upcurve"
                 android:gravity="center"
@@ -44,13 +44,13 @@
             android:orientation="horizontal"
            android:layout_margin="2dp" >
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:id="@+id/editText_LastName"
+                android:id="@+id/txt_Email"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
                 android:paddingLeft="8dp"
@@ -67,11 +67,11 @@
             android:layout_marginBottom="2dp"
              >
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/editTextPhone"
+                android:id="@+id/txtPhone"
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
@@ -88,12 +88,12 @@
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp" >
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_weight="1"
-                android:id="@+id/editTextLocation"
+                android:id="@+id/txtLocation"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:textColor="#ffffff"
@@ -101,29 +101,6 @@
                 android:background="@drawable/lowercurve"
                 android:textSize="@dimen/abc_text_size_medium_material" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp" >
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:onClick="onClick"
-                android:clickable="false"
-                android:id="@+id/button_Update"
-                android:text="Update"
-                android:background="@drawable/roundtransparent"
-                android:textColor="#ffffff" />
-        </LinearLayout>
-
-
-
     </LinearLayout>
 
 
