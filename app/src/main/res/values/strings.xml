@@ -43,6 +43,7 @@
     <string name="btnHistory">History</string>
     <string name="search">Search</string>
     <string name="enterEmail">Enter your email:</string>
+    <string name="birthday">Birthday</string>
 
 
     <string-array name="profileactivity">

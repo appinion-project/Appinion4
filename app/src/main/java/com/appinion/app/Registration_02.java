@@ -1,5 +1,8 @@
 package com.appinion.app;
 
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -10,11 +13,13 @@ import android.text.TextWatcher;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.appinion.utils.Const;
+import com.appinion.utils.DateDialog;
 import com.appinion.utils.MaterialUtils;
 import com.appinion.utils.Pref;
 import com.appinion.utils.WebserviceCall;
@@ -28,11 +33,12 @@ import cz.msebera.android.httpclient.entity.StringEntity;
 /**
  * Created by Ali Ahmed on 2/12/2016.
  */
-public class Registration_02 extends BaseActivity implements WebserviceResponse,View.OnFocusChangeListener{
+public class Registration_02 extends BaseActivity implements WebserviceResponse,View.OnFocusChangeListener,View.OnClickListener{
     private EditText mFnameEdt, mLnameEdt, mEmailEdt, mPhoneEdt, mPinEdt, mAgeEdt, mLocationEdt;
     private Button mSubmitBtn;
     private View check_fname;
     private WebserviceCall webserviceCall;
+    private ImageView imgBirthday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +75,9 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
         mLocationEdt = (EditText) findViewById(R.id.reg_edt_location);
         mLocationEdt.setOnFocusChangeListener(this);
         mSubmitBtn = (Button) findViewById(R.id.reg_btn_submit);
+
+        imgBirthday=(ImageView)findViewById(R.id.imgBirthday);
+        imgBirthday.setOnClickListener(this);
         webserviceCall = new WebserviceCall(this);
         webserviceCall.setWebserviceResponse(this);
 
@@ -122,6 +131,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                 }
             }
         });
+
     }
 
     @Override
@@ -195,7 +205,11 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
                 break;
 
             case R.id.reg_edt_age:
-                if(hasFocus==false){
+                if(hasFocus){
+                    DateDialog dialog=new DateDialog(v);
+                    FragmentTransaction ft=getFragmentManager().beginTransaction();
+                    dialog.show(ft,"DatePicker");
+
                   /*  View checkView= (View) findViewById(R.id.checkAge);
                     if(mAgeEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
@@ -229,6 +243,7 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
 
             case R.id.reg_edt_location:
                 if(hasFocus==false){
+
                  /*  View checkView= (View) findViewById(R.id.checkLocation);
                     if(mLocationEdt.getText().toString().equals("")){
                         checkView.setBackgroundResource(R.drawable.border_with_circle);
@@ -277,6 +292,16 @@ public class Registration_02 extends BaseActivity implements WebserviceResponse,
         }
 
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.imgBirthday:
+
+
+        }
 
     }
 }
