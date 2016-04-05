@@ -63,7 +63,7 @@
                 android:layout_gravity="center_vertical"
                 android:text="Log In"
                 android:background="@drawable/roundtransparent"
-                />
+                android:textColor="#ffffff" />
 
         </LinearLayout>
         <LinearLayout

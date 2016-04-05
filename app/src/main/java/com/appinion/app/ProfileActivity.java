@@ -86,6 +86,7 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
         updateView= LayoutInflater.from(ProfileActivity.this).inflate(R.layout.update_layout,null);
         privacyView=LayoutInflater.from(ProfileActivity.this).inflate(R.layout.privacy_layout,null);
         profileView=LayoutInflater.from(ProfileActivity.this).inflate(R.layout.profile_layout,null);
+        historyView=LayoutInflater.from(ProfileActivity.this).inflate(R.layout.layout_history,null);
 
         //tamim
         response=new JSONObject();
@@ -169,7 +170,7 @@ public class ProfileActivity extends AppCompatActivity implements WebserviceCall
                 button_history.setBackgroundResource(R.drawable.circle_button_history_click);
                 button_privacy.setBackgroundResource(R.drawable.circle_button_privacy);
                 scrollView.removeAllViews();
-                Toast.makeText(this, "History", Toast.LENGTH_SHORT).show();
+                scrollView.addView(historyView);
                 break;
 
             //tamim

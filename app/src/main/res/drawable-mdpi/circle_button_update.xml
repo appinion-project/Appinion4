@@ -14,7 +14,7 @@
 
 
     </item>
-    <item>   <bitmap android:src="@mipmap/btn_update_profile"/></item>
+    <item>   <bitmap android:src="@mipmap/icon_update"/></item>
 
 
 </layer-list>
