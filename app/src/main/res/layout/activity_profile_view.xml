@@ -29,6 +29,7 @@
         android:orientation="vertical"
         android:layout_marginRight="20dp"
         android:weightSum="10"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="30dp"
        >
 
@@ -38,7 +39,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:id="@+id/linearLayout"
@@ -55,11 +56,11 @@
                 >
 
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/btn_update"
                     android:onClick="onClick"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="50dp"
                     android:background="@drawable/circle_button_update"
                     />
 
@@ -74,8 +75,8 @@
 
                 >
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/btn_privacy"
                     android:onClick="onClick"
                     android:background="@drawable/circle_button_privacy"/>
@@ -92,9 +93,9 @@
 
                 >
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
                     android:id="@+id/btn_history"
                     android:onClick="onClick"
                     android:background="@drawable/circle_button_history"/>
@@ -108,7 +109,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="180dp"
             android:layout_gravity="center_horizontal"
             android:layout_weight="5"
             >
@@ -125,10 +127,10 @@
             android:id="@+id/btn_logOut"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-
             android:text="LOG OUT"
             android:onClick="onClick"
-            android:layout_gravity="left"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
             android:background="#24ffffff" />
     </LinearLayout>
 
