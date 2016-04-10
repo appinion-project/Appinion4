@@ -44,13 +44,14 @@
             android:name=".ProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity
             android:name=".GiftCardUse"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.trans"
             android:windowSoftInputMode="stateHidden" />
+
         <activity android:name=".BuyGiftCard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.trans"
