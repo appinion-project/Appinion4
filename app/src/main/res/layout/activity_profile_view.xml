@@ -3,14 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@mipmap/backgoround_light"
+    android:background="@mipmap/backgroundhatirjheel"
     android:layout_marginLeft="0dp"
     >
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:layout_marginLeft="0dp">
+        <Button
+            android:id="@+id/btn_logOut"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="LOG OUT"
+            android:layout_gravity="left"
+            android:onClick="onClick"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="180dp"
+
+            android:textColor="#ffffff"
+            android:background="#02fb0505" />
+
 
         <ImageView
             android:id="@+id/mainPageIV"
@@ -19,6 +34,8 @@
             android:layout_gravity="right"
             android:src="@mipmap/profile"
             android:onClick="onClick"/>
+
+
 
 
     </LinearLayout>
@@ -124,17 +141,6 @@
                 android:id="@+id/scrollView" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_logOut"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="LOG OUT"
-            android:onClick="onClick"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/border_rectangle"
-            android:textColor="#ffffff" />
     </LinearLayout>
 
 
