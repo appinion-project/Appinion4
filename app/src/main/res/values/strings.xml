@@ -44,6 +44,9 @@
     <string name="search">Search</string>
     <string name="enterEmail">Enter your email:</string>
     <string name="birthday">Birthday</string>
+    <string name="forgotitle">Please choose how you want \n     to reset your password</string>
+    <string name="viatext">Via Text</string>
+    <string name="viaemail">Via Email</string>
 
 
     <string-array name="profileactivity">
