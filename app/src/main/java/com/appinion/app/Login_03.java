@@ -1,5 +1,6 @@
 package com.appinion.app;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -91,8 +92,27 @@ public class Login_03 extends BaseActivity implements View.OnClickListener, Webs
                 break;
 
             case R.id.act_login_btn_forgotpassword:
+                Dialog dialog=new Dialog(this);
+                dialog.setContentView(R.layout.layout_forgotpassword);
+                Button btnText=(Button)dialog.findViewById(R.id.btn_text);
+                Button btnEmail=(Button)dialog.findViewById(R.id.btn_email);
+                //dialog.set
+                btnText.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(Login_03.this,"Hello",Toast.LENGTH_LONG).show();
+                    }
+                });
+                btnEmail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(Login_03.this,"Hello",Toast.LENGTH_LONG).show();
+                    }
+                });
+                //dialog.
+                dialog.show();
                 Intent intent=new Intent(Login_03.this,ForgetPasswordActivity.class);
-                startActivity(intent);
+               // startActivity(intent);
                 break;
 
             case R.id.act_login_btn_register:
